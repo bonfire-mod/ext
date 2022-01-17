@@ -1,7 +1,7 @@
 const extVersion = chrome.runtime.getManifest().version;
 
 const inject = async (branch, version) => {
-  console.log('[GooseMod for Web] Injecting...');
+  console.log('[banefyre-ext] Injecting...');
 
   window.gmExtension = version;
 
