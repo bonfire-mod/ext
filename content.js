@@ -31,8 +31,8 @@ const storageCache = {};
 chrome.storage.local.get(null, (data) => {
   Object.assign(storageCache, data);
 
-  if (Object.keys(storageCache).length === 0 && Object.keys(localStorage).find((x) => x.toLowerCase().startsWith('goosemod'))) { // Nothing stored in Extension storage and something GM in localStorage - migrate from LS to Ext
-    const gmKeys = Object.keys(localStorage).filter((x) => x.toLowerCase().startsWith('goosemod'));
+  if (Object.keys(storageCache).length === 0 && Object.keys(localStorage).find((x) => x.toLowerCase().startsWith('bonfire'))) { // Nothing stored in Extension storage and something GM in localStorage - migrate from LS to Ext
+    const gmKeys = Object.keys(localStorage).filter((x) => x.toLowerCase().startsWith('bonfire'));
 
     const setObj = {};
 
