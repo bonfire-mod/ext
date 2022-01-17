@@ -1,18 +1,18 @@
 const extVersion = chrome.runtime.getManifest().version;
 
 const inject = async (branch, version) => {
-  console.log('[banefyre-ext] Injecting...');
+  console.log('[bonfire-ext] Injecting...');
 
   window.bfExtension = version;
 
   const branchURLs = {
-    release: 'https://raw.githubusercontent.com/bonefire-mod/banefyre/dist-prod/index.js',
-    dev: 'https://raw.githubusercontent.com/bonefire-mod/banefyre/dist-dev/index.js',
+    release: 'https://raw.githubusercontent.com/bonefire-mod/bonfire/dist-prod/index.js',
+    dev: 'https://raw.githubusercontent.com/bonefire-mod/bonfire/dist-dev/index.js',
     local: 'http://localhost:1234/index.js'
   };
 
-  console.log('[banefyre-ext] Branch =', branch);
-  console.log('[banefyre-ext] JS Url =', branchURLs[branch]);
+  console.log('[bonfire-ext] Branch =', branch);
+  console.log('[bonfire-ext] JS Url =', branchURLs[branch]);
   
   const js = await (await fetch(branchURLs[branch])).text(); // JSON.parse(localStorage.getItem('goosemodCoreJSCache'));
 
@@ -22,5 +22,5 @@ const inject = async (branch, version) => {
   
   document.body.appendChild(el);
 
-  console.log('[banefyre-ext] Injected fetched JS');
+  console.log('[bonfire-ext] Injected fetched JS');
 };
