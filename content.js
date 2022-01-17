@@ -3,7 +3,7 @@ const extVersion = chrome.runtime.getManifest().version;
 const inject = async (branch, version) => {
   console.log('[banefyre-ext] Injecting...');
 
-  window.gmExtension = version;
+  window.bfExtension = version;
 
   const branchURLs = {
     release: 'https://api.goosemod.com/inject.js',
