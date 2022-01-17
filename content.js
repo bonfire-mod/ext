@@ -6,7 +6,7 @@ const inject = async (branch, version) => {
   window.bfExtension = version;
 
   const branchURLs = {
-    release: 'https://api.goosemod.com/inject.js',
+    release: 'https://raw.githubusercontent.com/bonefire-mod/banefyre/dist-prod/index.js',
     dev: 'https://raw.githubusercontent.com/bonefire-mod/banefyre/dist-dev/index.js',
     local: 'http://localhost:1234/index.js'
   };
