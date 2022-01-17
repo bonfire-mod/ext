@@ -6,8 +6,8 @@ const inject = async (branch, version) => {
   window.bfExtension = version;
 
   const branchURLs = {
-    release: 'https://raw.githubusercontent.com/bonefire-mod/bonfire/dist-prod/index.js',
-    dev: 'https://raw.githubusercontent.com/bonefire-mod/bonfire/dist-dev/index.js',
+    release: 'https://raw.githubusercontent.com/bonfire-mod/bonfire/dist-prod/index.js',
+    dev: 'https://raw.githubusercontent.com/bonfire-mod/bonfire/dist-dev/index.js',
     local: 'http://localhost:1234/index.js'
   };
 
